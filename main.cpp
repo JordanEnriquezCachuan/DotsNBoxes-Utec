@@ -2,10 +2,8 @@
 
 int main(){
 
-
     menu m1;
-    m1.start();
-
+    ++m1;
 
     return 0;
 }

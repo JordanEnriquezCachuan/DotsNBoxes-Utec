@@ -2,13 +2,13 @@
 
 class tablero{
 
-    int jugA=0,jugB=0;
-    int filas,col;
-    bool turno = false;
-    int completados;
-    vector<vector<char>> Matrix;
+    int jugA=0,jugB=0; // Sirve para ver que jugador tiene mas cuadrados ganados
+    int filas,col; // El tamaño del tablero
+    bool turno = false; // Si es true es el turno de un jugador y si es false es el turno del otro jugador
+    int completados;    // Si completados == 0 entonces significa que el juego termino
+    vector<vector<char>> Matrix; // La matriz del juego
 
-    bool addlinea(int of,int oc,int df,int dc){
+    bool addlinea(int of,int oc,int df,int dc){ // Logica para añadir una linea y tambien verifica si es un espacio vacio;
         int orF,orC,desF,desC;
         orF=(of-1)*2;
         orC=(oc-1)*2;
@@ -68,7 +68,7 @@ class tablero{
             }
         }
         return completed;
-    }
+    } // Logica para verificar si los alrededores de un cuadrado estan con lineas
 
 
 
@@ -95,8 +95,8 @@ public:
             Matrix.push_back(temp);
         }
 
-    };
-    ~tablero(){cout<<"Se destruyo"<<endl;}
+    }; // Constructor para crear el tablero!!
+    ~tablero(){cout<<"Se destruyo"<<endl;} // Destructor de tablero
 
 
     void printM(){
@@ -115,7 +115,7 @@ public:
             }
             cout<<endl;
         }
-    }
+    } //Imprime el tablero entero de una forma bonita
     void logic(){
         int orF=1,orC=1,desF=1,desC=1;
         cout<<"Empezo el juego, empieza el jugador A "<<endl;
@@ -171,9 +171,11 @@ public:
         }
         cout<<"Gano el jugador: ";
         jugA>jugB? cout<<'A'<<endl : cout<<'B'<<endl;
-    }
-    void setCompletados(int num){
+    } // Logica del tablero: Restricciones, loop hasta terminar y llama a las demas funciones
+
+    void setCompletados(int num){ // Setter usado en la clase menu para la logica del tablero
         completados=num;
     }
 
 };
+
