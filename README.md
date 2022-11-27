@@ -1,4 +1,4 @@
-# DOTS N BOXES - UTEC
+# DOTS AND BOXES - UTEC
 
 ## Integrantes: 
 
@@ -8,6 +8,7 @@
 - Ivan Gonzales Saavedra - 202120237
 - Eduardo Alexander Fernández Obregón - 202210129
 - Jaquelin Milagros Paredes Quispe - 202120422
+- Ricardo Adrian Lozano Acho - 202120328
 
 ---
 
