@@ -32,7 +32,7 @@ Nuestro proyecto cuenta con la `Licencia Pública General GNU v3.0`  la cual exp
 
 ## Link del video: 
 
-
+https://www.youtube.com/watch?v=XvqtmBcZbh8
 
 
 ## Integrantes: 
